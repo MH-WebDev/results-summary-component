@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="font-body">
+    <main
+      class="shadow-3xl w-[20.4rem] rounded-b-3xl sm:w-[46rem] mx-auto sm:rounded-3xl sm:mt-20"
+    >
+      <div class="text-center flex flex-col sm:flex-row">
+        <div
+          class="bg-gradient-to-b from-light-slate-blue to-light-royal-blue rounded-b-3xl sm:rounded-3xl sm:w-1/2 sm:p-5"
+        >
+          <h1 class="text-white/70 font-bold text-[1.125rem] p-5">
+            Your Result
+          </h1>
+          <div
+            class="rounded-full w-[9rem] h-[9rem] sm:w-[11rem] sm:h-[11rem] flex flex-col justify-center mx-auto bg-gradient-to-b from-violet-blue to-persian-blue p-4"
+          >
+            <h1 class="average font-bold text-white text-5xl p-2 sm:text-6xl">
+              76
+            </h1>
+            <h2 class="font-bold text-white/70">of 100</h2>
+          </div>
+          <h1 class="text-white text-2xl font-bold pt-4 pb-2 sm:p-6">Great</h1>
+          <p
+            class="mx-auto pb-10 w-4/5 sm:w-3/5 text-white/70 font-medium text-sm"
+          >
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+        <div class="lower p-4 sm:w-1/2 sm:px-12">
+          <h1 class="text-left pt-4 pb-4 text-xl font-bold">Summary</h1>
+          <div
+            class="category bg-light-red/10 rounded-xl mb-4 p-4 flex justify-between font-bold bg-reaction bg-no-repeat bg-left bg-origin-content bg-[length:25px]"
+          >
+            <div class="detail">
+              <h2 class="text-light-red pl-8 name"></h2>
+            </div>
+            <div class="score"></div>
+          </div>
+          <div
+            class="category bg-orange-yellow/10 rounded-xl mb-4 p-4 flex justify-between font-bold bg-memory bg-no-repeat bg-left bg-origin-content bg-[length:25px]"
+          >
+            <div class="detail">
+              <h2 class="text-orange-yellow pl-8 name"></h2>
+            </div>
+            <div class="score"></div>
+          </div>
+          <div
+            class="category bg-green-teal/10 rounded-xl mb-4 p-4 flex justify-between font-bold bg-verbal bg-no-repeat bg-left bg-origin-content bg-[length:25px]"
+          >
+            <div class="detail">
+              <h2 class="text-green-teal pl-8 name"></h2>
+            </div>
+            <div class="score"></div>
+          </div>
+          <div
+            class="category bg-cobalt-blue/10 rounded-xl mb-4 p-4 flex justify-between font-bold bg-visual bg-no-repeat bg-left bg-origin-content bg-[length:25px]"
+          >
+            <div class="detail">
+              <h2 class="text-cobalt-blue pl-8 name"></h2>
+            </div>
+            <div class="score"></div>
+          </div>
+          <button
+            type="submit"
+            class="rounded-full bg-dark-gray-blue w-full p-4 sm:mt-4 text-white font-bold text-xl hover:bg-gradient-to-b from-light-slate-blue to-light-royal-blue"
+          >
+            Continue
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="attribution pt-7">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Martin Hussey</a>.
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
